@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T2pBFiZb1Pw=",
+  "dgSpecHash": "cXxJ0FoWvkw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\44120933873\\source\\repos\\atividadeSomativa\\atividadeSomativa\\atividadeSomativa.csproj",
+  "projectFilePath": "C:\\Users\\hlinh\\Desktop\\atividadeSomativa\\atividadeSomativa\\atividadeSomativa\\atividadeSomativa.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\44120933873\\.nuget\\packages\\mqttnet\\4.3.7.1207\\mqttnet.4.3.7.1207.nupkg.sha512",
-    "C:\\Users\\44120933873\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+    "C:\\Users\\hlinh\\.nuget\\packages\\mqttnet\\4.3.7.1207\\mqttnet.4.3.7.1207.nupkg.sha512",
+    "C:\\Users\\hlinh\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }

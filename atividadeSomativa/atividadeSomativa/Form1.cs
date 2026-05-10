@@ -27,6 +27,9 @@ namespace atividadeSomativa
             var fabrica = new MqttFactory();
             clienteMqtt = fabrica.CreateMqttClient();
 
+            lblConexao.Text = "Conectado";
+            lblConexao.ForeColor = Color.Green;
+
             clienteMqtt.ApplicationMessageReceivedAsync += eMensagem =>
             {
                 string mensagem = Encoding.UTF8.GetString(eMensagem.ApplicationMessage.Payload);
@@ -57,6 +60,10 @@ namespace atividadeSomativa
 
         private async void button1_Click(object sender, EventArgs e)
         {
+
+            lblConexao.Text = "Conectado";
+            lblConexao.ForeColor = Color.Green;
+
             try
             {
                 if (clienteMqtt != null)
@@ -104,5 +111,6 @@ namespace atividadeSomativa
         {
             txtAlarmes.Clear();
         }
+
     }
 }

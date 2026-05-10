@@ -3,7 +3,7 @@ import json
 import random
 import time
 
-broker = "10.110.18.11"
+broker = "127.0.0.1"
 porta = 1883
 topico = "atividade/sensores"
 
@@ -12,7 +12,6 @@ cliente.connect(broker, porta, 60)
 
 print("Enviando dados para o broker MQTT...")
 print("Pressiona Ctrl + C para encerrar.\n")
-
 
 try:
     while True:

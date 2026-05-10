@@ -54,7 +54,7 @@
             panelTitulo = new Panel();
             label2 = new Label();
             panelStatus = new Panel();
-            label1 = new Label();
+            lblConexao = new Label();
             lblTitleStatus = new Label();
             panelBotoes = new Panel();
             btnDesconectar = new Button();
@@ -87,18 +87,19 @@
             panelTitle.BackColor = SystemColors.GradientInactiveCaption;
             panelTitle.BorderStyle = BorderStyle.FixedSingle;
             panelTitle.Controls.Add(lblTitle);
-            panelTitle.Location = new Point(0, 2);
+            panelTitle.Location = new Point(0, 3);
+            panelTitle.Margin = new Padding(3, 4, 3, 4);
             panelTitle.Name = "panelTitle";
-            panelTitle.Size = new Size(986, 58);
+            panelTitle.Size = new Size(1127, 77);
             panelTitle.TabIndex = 0;
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Arial", 22F, FontStyle.Bold);
-            lblTitle.Location = new Point(333, 6);
+            lblTitle.Location = new Point(381, 8);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(303, 35);
+            lblTitle.Size = new Size(381, 44);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Comunicação MQTT";
             // 
@@ -111,9 +112,10 @@
             panelAutomatico.Controls.Add(panelPressao);
             panelAutomatico.Controls.Add(panelUmidade);
             panelAutomatico.Controls.Add(panelTemperatura);
-            panelAutomatico.Location = new Point(12, 66);
+            panelAutomatico.Location = new Point(14, 88);
+            panelAutomatico.Margin = new Padding(3, 4, 3, 4);
             panelAutomatico.Name = "panelAutomatico";
-            panelAutomatico.Size = new Size(461, 449);
+            panelAutomatico.Size = new Size(527, 598);
             panelAutomatico.TabIndex = 1;
             // 
             // panelNivel
@@ -122,27 +124,28 @@
             panelNivel.BorderStyle = BorderStyle.FixedSingle;
             panelNivel.Controls.Add(lblNivel);
             panelNivel.Controls.Add(label8);
-            panelNivel.Location = new Point(66, 353);
+            panelNivel.Location = new Point(75, 471);
+            panelNivel.Margin = new Padding(3, 4, 3, 4);
             panelNivel.Name = "panelNivel";
-            panelNivel.Size = new Size(315, 78);
+            panelNivel.Size = new Size(360, 103);
             panelNivel.TabIndex = 4;
             // 
             // lblNivel
             // 
             lblNivel.AutoSize = true;
-            lblNivel.Font = new Font("Arial Narrow", 30F, FontStyle.Bold);
-            lblNivel.Location = new Point(69, 16);
+            lblNivel.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold);
+            lblNivel.Location = new Point(79, 21);
             lblNivel.Name = "lblNivel";
-            lblNivel.Size = new Size(0, 46);
+            lblNivel.Size = new Size(0, 58);
             lblNivel.TabIndex = 5;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(14, 29);
+            label8.Location = new Point(16, 39);
             label8.Name = "label8";
-            label8.Size = new Size(49, 18);
+            label8.Size = new Size(65, 23);
             label8.TabIndex = 3;
             label8.Text = "Nível: ";
             // 
@@ -152,27 +155,28 @@
             panelVibracao.BorderStyle = BorderStyle.FixedSingle;
             panelVibracao.Controls.Add(lblVibracao);
             panelVibracao.Controls.Add(label7);
-            panelVibracao.Location = new Point(250, 198);
+            panelVibracao.Location = new Point(286, 264);
+            panelVibracao.Margin = new Padding(3, 4, 3, 4);
             panelVibracao.Name = "panelVibracao";
-            panelVibracao.Size = new Size(184, 140);
+            panelVibracao.Size = new Size(222, 186);
             panelVibracao.TabIndex = 3;
             // 
             // lblVibracao
             // 
             lblVibracao.AutoSize = true;
-            lblVibracao.Font = new Font("Arial Narrow", 30F, FontStyle.Bold);
-            lblVibracao.Location = new Point(12, 61);
+            lblVibracao.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold);
+            lblVibracao.Location = new Point(14, 81);
             lblVibracao.Name = "lblVibracao";
-            lblVibracao.Size = new Size(0, 46);
+            lblVibracao.Size = new Size(0, 58);
             lblVibracao.TabIndex = 4;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(55, 15);
+            label7.Location = new Point(63, 19);
             label7.Name = "label7";
-            label7.Size = new Size(76, 18);
+            label7.Size = new Size(94, 23);
             label7.TabIndex = 3;
             label7.Text = "Vibração:";
             // 
@@ -182,27 +186,28 @@
             panelPressao.BorderStyle = BorderStyle.FixedSingle;
             panelPressao.Controls.Add(lblPressao);
             panelPressao.Controls.Add(label6);
-            panelPressao.Location = new Point(19, 198);
+            panelPressao.Location = new Point(22, 264);
+            panelPressao.Margin = new Padding(3, 4, 3, 4);
             panelPressao.Name = "panelPressao";
-            panelPressao.Size = new Size(184, 140);
+            panelPressao.Size = new Size(227, 186);
             panelPressao.TabIndex = 2;
             // 
             // lblPressao
             // 
             lblPressao.AutoSize = true;
-            lblPressao.Font = new Font("Arial Narrow", 30F, FontStyle.Bold);
-            lblPressao.Location = new Point(14, 61);
+            lblPressao.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold);
+            lblPressao.Location = new Point(16, 81);
             lblPressao.Name = "lblPressao";
-            lblPressao.Size = new Size(0, 46);
+            lblPressao.Size = new Size(0, 58);
             lblPressao.TabIndex = 3;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(47, 15);
+            label6.Location = new Point(69, 19);
             label6.Name = "label6";
-            label6.Size = new Size(71, 18);
+            label6.Size = new Size(89, 23);
             label6.TabIndex = 2;
             label6.Text = "Pressão:";
             // 
@@ -212,27 +217,28 @@
             panelUmidade.BorderStyle = BorderStyle.FixedSingle;
             panelUmidade.Controls.Add(lblUmidade);
             panelUmidade.Controls.Add(label4);
-            panelUmidade.Location = new Point(250, 44);
+            panelUmidade.Location = new Point(286, 59);
+            panelUmidade.Margin = new Padding(3, 4, 3, 4);
             panelUmidade.Name = "panelUmidade";
-            panelUmidade.Size = new Size(184, 140);
+            panelUmidade.Size = new Size(222, 186);
             panelUmidade.TabIndex = 1;
             // 
             // lblUmidade
             // 
             lblUmidade.AutoSize = true;
-            lblUmidade.Font = new Font("Arial Narrow", 30F, FontStyle.Bold);
-            lblUmidade.Location = new Point(12, 50);
+            lblUmidade.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold);
+            lblUmidade.Location = new Point(14, 67);
             lblUmidade.Name = "lblUmidade";
-            lblUmidade.Size = new Size(0, 46);
+            lblUmidade.Size = new Size(0, 58);
             lblUmidade.TabIndex = 1;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(55, 10);
+            label4.Location = new Point(64, 13);
             label4.Name = "label4";
-            label4.Size = new Size(76, 18);
+            label4.Size = new Size(93, 23);
             label4.TabIndex = 0;
             label4.Text = "Umidade:";
             // 
@@ -242,27 +248,28 @@
             panelTemperatura.BorderStyle = BorderStyle.FixedSingle;
             panelTemperatura.Controls.Add(lblTemperatura);
             panelTemperatura.Controls.Add(label5);
-            panelTemperatura.Location = new Point(19, 44);
+            panelTemperatura.Location = new Point(22, 59);
+            panelTemperatura.Margin = new Padding(3, 4, 3, 4);
             panelTemperatura.Name = "panelTemperatura";
-            panelTemperatura.Size = new Size(184, 140);
+            panelTemperatura.Size = new Size(227, 186);
             panelTemperatura.TabIndex = 0;
             // 
             // lblTemperatura
             // 
             lblTemperatura.AutoSize = true;
-            lblTemperatura.Font = new Font("Arial Narrow", 30F, FontStyle.Bold);
-            lblTemperatura.Location = new Point(14, 50);
+            lblTemperatura.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold);
+            lblTemperatura.Location = new Point(16, 67);
             lblTemperatura.Name = "lblTemperatura";
-            lblTemperatura.Size = new Size(0, 46);
+            lblTemperatura.Size = new Size(0, 58);
             lblTemperatura.TabIndex = 2;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(33, 10);
+            label5.Location = new Point(52, 13);
             label5.Name = "label5";
-            label5.Size = new Size(99, 18);
+            label5.Size = new Size(127, 23);
             label5.TabIndex = 1;
             label5.Text = "Temperatura:";
             // 
@@ -281,17 +288,19 @@
             panelManual.Controls.Add(lblPorta);
             panelManual.Controls.Add(txtBroker);
             panelManual.Controls.Add(lblBroker);
-            panelManual.Location = new Point(510, 66);
+            panelManual.Location = new Point(583, 88);
+            panelManual.Margin = new Padding(3, 4, 3, 4);
             panelManual.Name = "panelManual";
-            panelManual.Size = new Size(463, 449);
+            panelManual.Size = new Size(529, 598);
             panelManual.TabIndex = 2;
             // 
             // txtAlarmes
             // 
-            txtAlarmes.Location = new Point(3, 353);
+            txtAlarmes.Location = new Point(3, 471);
+            txtAlarmes.Margin = new Padding(3, 4, 3, 4);
             txtAlarmes.Multiline = true;
             txtAlarmes.Name = "txtAlarmes";
-            txtAlarmes.Size = new Size(455, 91);
+            txtAlarmes.Size = new Size(519, 120);
             txtAlarmes.TabIndex = 9;
             // 
             // panel2
@@ -300,18 +309,20 @@
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(btnDesligarAlarme);
             panel2.Controls.Add(btnLigarAlarme);
-            panel2.Location = new Point(245, 237);
+            panel2.Location = new Point(280, 316);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(200, 101);
+            panel2.Size = new Size(228, 134);
             panel2.TabIndex = 7;
             // 
             // btnDesligarAlarme
             // 
             btnDesligarAlarme.BackColor = Color.Red;
             btnDesligarAlarme.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDesligarAlarme.Location = new Point(40, 46);
+            btnDesligarAlarme.Location = new Point(46, 61);
+            btnDesligarAlarme.Margin = new Padding(3, 4, 3, 4);
             btnDesligarAlarme.Name = "btnDesligarAlarme";
-            btnDesligarAlarme.Size = new Size(124, 52);
+            btnDesligarAlarme.Size = new Size(142, 69);
             btnDesligarAlarme.TabIndex = 1;
             btnDesligarAlarme.Text = "Desligar Alarmes";
             btnDesligarAlarme.UseVisualStyleBackColor = false;
@@ -321,9 +332,10 @@
             // 
             btnLigarAlarme.BackColor = Color.YellowGreen;
             btnLigarAlarme.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLigarAlarme.Location = new Point(40, 3);
+            btnLigarAlarme.Location = new Point(46, 4);
+            btnLigarAlarme.Margin = new Padding(3, 4, 3, 4);
             btnLigarAlarme.Name = "btnLigarAlarme";
-            btnLigarAlarme.Size = new Size(124, 47);
+            btnLigarAlarme.Size = new Size(142, 63);
             btnLigarAlarme.TabIndex = 0;
             btnLigarAlarme.Text = "Ligar Alarmes";
             btnLigarAlarme.UseVisualStyleBackColor = false;
@@ -334,17 +346,18 @@
             panelTitulo.BackColor = Color.AliceBlue;
             panelTitulo.Controls.Add(label2);
             panelTitulo.Location = new Point(0, 0);
+            panelTitulo.Margin = new Padding(3, 4, 3, 4);
             panelTitulo.Name = "panelTitulo";
-            panelTitulo.Size = new Size(463, 38);
+            panelTitulo.Size = new Size(529, 51);
             panelTitulo.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 12F, FontStyle.Bold);
-            label2.Location = new Point(138, 9);
+            label2.Location = new Point(158, 12);
             label2.Name = "label2";
-            label2.Size = new Size(196, 19);
+            label2.Size = new Size(240, 24);
             label2.TabIndex = 9;
             label2.Text = "Painel de Configurações";
             // 
@@ -352,30 +365,32 @@
             // 
             panelStatus.BackColor = SystemColors.Control;
             panelStatus.BorderStyle = BorderStyle.FixedSingle;
-            panelStatus.Controls.Add(label1);
+            panelStatus.Controls.Add(lblConexao);
             panelStatus.Controls.Add(lblTitleStatus);
-            panelStatus.Location = new Point(245, 44);
+            panelStatus.Location = new Point(280, 59);
+            panelStatus.Margin = new Padding(3, 4, 3, 4);
             panelStatus.Name = "panelStatus";
-            panelStatus.Size = new Size(200, 45);
+            panelStatus.Size = new Size(228, 59);
             panelStatus.TabIndex = 7;
             // 
-            // label1
+            // lblConexao
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial", 12F);
-            label1.Location = new Point(84, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 18);
-            label1.TabIndex = 9;
-            label1.Text = "Desconectado";
+            lblConexao.AutoSize = true;
+            lblConexao.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblConexao.ForeColor = Color.Red;
+            lblConexao.Location = new Point(87, 14);
+            lblConexao.Name = "lblConexao";
+            lblConexao.Size = new Size(136, 23);
+            lblConexao.TabIndex = 9;
+            lblConexao.Text = "Desconectado";
             // 
             // lblTitleStatus
             // 
             lblTitleStatus.AutoSize = true;
             lblTitleStatus.Font = new Font("Arial", 12F, FontStyle.Bold);
-            lblTitleStatus.Location = new Point(14, 10);
+            lblTitleStatus.Location = new Point(16, 13);
             lblTitleStatus.Name = "lblTitleStatus";
-            lblTitleStatus.Size = new Size(64, 19);
+            lblTitleStatus.Size = new Size(78, 24);
             lblTitleStatus.TabIndex = 8;
             lblTitleStatus.Text = "Status:";
             // 
@@ -385,18 +400,20 @@
             panelBotoes.BorderStyle = BorderStyle.FixedSingle;
             panelBotoes.Controls.Add(btnDesconectar);
             panelBotoes.Controls.Add(btnConectar);
-            panelBotoes.Location = new Point(245, 106);
+            panelBotoes.Location = new Point(280, 141);
+            panelBotoes.Margin = new Padding(3, 4, 3, 4);
             panelBotoes.Name = "panelBotoes";
-            panelBotoes.Size = new Size(200, 125);
+            panelBotoes.Size = new Size(228, 166);
             panelBotoes.TabIndex = 6;
             // 
             // btnDesconectar
             // 
             btnDesconectar.BackColor = Color.Red;
             btnDesconectar.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDesconectar.Location = new Point(40, 65);
+            btnDesconectar.Location = new Point(46, 87);
+            btnDesconectar.Margin = new Padding(3, 4, 3, 4);
             btnDesconectar.Name = "btnDesconectar";
-            btnDesconectar.Size = new Size(124, 48);
+            btnDesconectar.Size = new Size(142, 64);
             btnDesconectar.TabIndex = 1;
             btnDesconectar.Text = "Desconectar";
             btnDesconectar.UseVisualStyleBackColor = false;
@@ -406,9 +423,10 @@
             // 
             btnConectar.BackColor = Color.YellowGreen;
             btnConectar.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnConectar.Location = new Point(40, 11);
+            btnConectar.Location = new Point(46, 15);
+            btnConectar.Margin = new Padding(3, 4, 3, 4);
             btnConectar.Name = "btnConectar";
-            btnConectar.Size = new Size(124, 48);
+            btnConectar.Size = new Size(142, 64);
             btnConectar.TabIndex = 0;
             btnConectar.Text = "Conectar";
             btnConectar.UseVisualStyleBackColor = false;
@@ -416,52 +434,55 @@
             // 
             // txtTopico
             // 
-            txtTopico.Location = new Point(34, 283);
+            txtTopico.Location = new Point(39, 377);
+            txtTopico.Margin = new Padding(3, 4, 3, 4);
             txtTopico.Name = "txtTopico";
-            txtTopico.Size = new Size(182, 23);
+            txtTopico.Size = new Size(207, 27);
             txtTopico.TabIndex = 5;
             // 
             // lblTopico
             // 
             lblTopico.AutoSize = true;
             lblTopico.Font = new Font("Arial", 12F, FontStyle.Bold);
-            lblTopico.Location = new Point(34, 261);
+            lblTopico.Location = new Point(39, 348);
             lblTopico.Name = "lblTopico";
-            lblTopico.Size = new Size(62, 19);
+            lblTopico.Size = new Size(75, 24);
             lblTopico.TabIndex = 4;
             lblTopico.Text = "Tópico";
             // 
             // txtPorta
             // 
-            txtPorta.Location = new Point(34, 187);
+            txtPorta.Location = new Point(39, 249);
+            txtPorta.Margin = new Padding(3, 4, 3, 4);
             txtPorta.Name = "txtPorta";
-            txtPorta.Size = new Size(182, 23);
+            txtPorta.Size = new Size(207, 27);
             txtPorta.TabIndex = 3;
             // 
             // lblPorta
             // 
             lblPorta.AutoSize = true;
             lblPorta.Font = new Font("Arial", 12F, FontStyle.Bold);
-            lblPorta.Location = new Point(34, 165);
+            lblPorta.Location = new Point(39, 220);
             lblPorta.Name = "lblPorta";
-            lblPorta.Size = new Size(50, 19);
+            lblPorta.Size = new Size(61, 24);
             lblPorta.TabIndex = 2;
             lblPorta.Text = "Porta";
             // 
             // txtBroker
             // 
-            txtBroker.Location = new Point(34, 95);
+            txtBroker.Location = new Point(39, 127);
+            txtBroker.Margin = new Padding(3, 4, 3, 4);
             txtBroker.Name = "txtBroker";
-            txtBroker.Size = new Size(182, 23);
+            txtBroker.Size = new Size(207, 27);
             txtBroker.TabIndex = 1;
             // 
             // lblBroker
             // 
             lblBroker.AutoSize = true;
             lblBroker.Font = new Font("Arial", 12F, FontStyle.Bold);
-            lblBroker.Location = new Point(34, 70);
+            lblBroker.Location = new Point(39, 93);
             lblBroker.Name = "lblBroker";
-            lblBroker.Size = new Size(61, 19);
+            lblBroker.Size = new Size(74, 24);
             lblBroker.TabIndex = 0;
             lblBroker.Text = "Broker";
             // 
@@ -469,30 +490,32 @@
             // 
             panel1.BackColor = Color.AliceBlue;
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(12, 66);
+            panel1.Location = new Point(14, 88);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(461, 38);
+            panel1.Size = new Size(527, 51);
             panel1.TabIndex = 10;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 12F, FontStyle.Bold);
-            label3.Location = new Point(99, 9);
+            label3.Location = new Point(113, 12);
             label3.Name = "label3";
-            label3.Size = new Size(257, 19);
+            label3.Size = new Size(314, 24);
             label3.TabIndex = 9;
             label3.Text = "Painel de Visualização de Dados";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(985, 527);
+            ClientSize = new Size(1126, 703);
             Controls.Add(panel1);
             Controls.Add(panelManual);
             Controls.Add(panelAutomatico);
             Controls.Add(panelTitle);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             panelTitle.ResumeLayout(false);
@@ -539,7 +562,6 @@
         private Panel panelTitulo;
         private Label label2;
         private Panel panelStatus;
-        private Label label1;
         private Label lblTitleStatus;
         private Panel panel1;
         private Label label3;
@@ -562,5 +584,6 @@
         private Button btnDesligarAlarme;
         private Button btnLigarAlarme;
         private TextBox txtAlarmes;
+        private Label lblConexao;
     }
 }
