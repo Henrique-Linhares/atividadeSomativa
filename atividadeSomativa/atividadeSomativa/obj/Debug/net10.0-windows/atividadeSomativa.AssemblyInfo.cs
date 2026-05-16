@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("atividadeSomativa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ca1ffc01c1a522a905e2abd2f8922bf7cd8e3e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8be722ab6a694e57f364fddf7e111e1e57ea35ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("atividadeSomativa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("atividadeSomativa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -17,6 +17,7 @@ namespace atividadeSomativa
     public partial class Form1 : Form
     {
         private IMqttClient clienteMqtt;
+        private bool isOpen = false;
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +44,10 @@ namespace atividadeSomativa
                    lblVibracao.Text = $"{dados.Vibracao} m/s²";
                    lblNivel.Text = $"{dados.Nivel} m";
 
-                   alarmes();
+                   if(isOpen == true)
+                   {
+                       alarmes();
+                   }
                });
 
                 return System.Threading.Tasks.Task.CompletedTask;
@@ -81,19 +85,20 @@ namespace atividadeSomativa
 
         private void btnLigarAlarme_Click(object sender, EventArgs e)
         {
+            isOpen = true;
         }
 
-        private void alarmes()
+        private async Task alarmes()
         {
-            VerificarAlarme(lblTemperatura.Text, 90, "Temperatura alta detectada!");
-            VerificarAlarme(lblUmidade.Text, 95, "Umidade alta detectada!");
-            VerificarAlarme(lblPressao.Text, 10, "Pressão alta detectada!");
-            VerificarAlarme(lblVibracao.Text, 25, "Vibração alta detectada!");
-            VerificarAlarme(lblNivel.Text, 100, "Nível alto detectado!");
+            await VerificarAlarme(lblTemperatura.Text, 90, "Temperatura alta detectada!");
+            await VerificarAlarme(lblUmidade.Text, 95, "Umidade alta detectada!");
+            await VerificarAlarme(lblPressao.Text, 10, "Pressão alta detectada!");
+            await VerificarAlarme(lblVibracao.Text, 25, "Vibração alta detectada!");
+            await VerificarAlarme(lblNivel.Text, 100, "Nível alto detectado!");
         }
 
 
-        private void VerificarAlarme(string textoLabel, double limite, string mensagemAlarme)
+        private async Task VerificarAlarme(string textoLabel, double limite, string mensagemAlarme)
         {
             string apenasNumeros = System.Text.RegularExpressions.Regex.Replace(textoLabel, @"[^\d,.]", "");
 
@@ -103,6 +108,9 @@ namespace atividadeSomativa
                 {
                     txtAlarmes.AppendText($"[{DateTime.Now:HH:mm:ss}] {mensagemAlarme}{Environment.NewLine}");
                     txtAlarmes.ScrollToCaret();
+                    MessageBox.Show(mensagemAlarme, "Alarme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    await Task.Delay(3000);
                 }
             }
         }
@@ -110,6 +118,7 @@ namespace atividadeSomativa
         private void btnDesligarAlarme_Click(object sender, EventArgs e)
         {
             txtAlarmes.Clear();
+            isOpen = false;
         }
 
     }
